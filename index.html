@@ -1,18 +1,16 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portafolio</title>
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/style.css" />
 </head>
 
 <body>
-
     <header id="Top">
         <div class="container-header">
-
             <h1 class="Logo">
                 <span class="simbolo"> &lt;/&gt;</span>
                 <span class="white"> Angel </span>
@@ -28,11 +26,13 @@
                 <li><a href="#proyects">Proyects</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
-
+            <!-- Hamburguer Menu -->
+            <div class="menu-toggle">
+                ☰
+            </div>
         </nav>
-        
     </header>
-    
+
     <main>
         <section id="home" class="hero">
             <div class="hero-overlay">
@@ -40,25 +40,112 @@
                     <h2>Hello, I'am <span>Angel</span></h2>
                     <p>Software development apprentice</p>
                     <p class="descrition">
-                        i'm focus on learning every day more about the develoment for creat solutions simple and useful
+                        i'm focus on learning every day more about the develoment for
+                        creat solutions simple and useful
                     </p>
                     <a href="#proyects" class="btn"> show proyects</a>
                 </div>
 
-                <div class="hero-img">
-                    
-                </div>
-
+                <div class="hero-img"></div>
             </div>
         </section>
 
         <section id="about-me" class="abaut-me">
-            
+            <div class="container-about-me">
+                <!-- img -->
+                <div class="about-me-img">
+                    <img src="assets/img/radius.jpeg" alt="example" />
+                </div>
+
+                <!-- Text -->
+                <div class="about-me-text">
+                    <h2>Abaout-me</h2>
+
+                    <p>
+                        i'm a software development apprentice focused on improving my
+                        skills daily. I'm interested in developing simple solutions. well
+                        organized and functional.
+                    </p>
+
+                    <p>
+                        At the moment I am studying Python and programming logic and
+                        principles of web development
+                    </p>
+
+                    <!-- Skills -->
+                    <div class="skills">
+                        <span>Python</span>
+                        <span>HTML</span>
+                        <span>Logic</span>
+                        <span>CSS</span>
+                    </div>
+                </div>
+            </div>
         </section>
 
+        <section id="proyects" class="proyects">
+            <h2 class="Titel"> My Proyects</h2>
 
+
+            <div class="container-proyects">
+
+                <div class="card">
+                    <img src="assets/img/estorage.png" alt="">
+                    <h3>Storage Sistem</h3>
+                    <p>Aplication on Python for gesture products and Stock</p>
+                    <a href="https://github.com/LilDAng31/Invetario-UserHistory" class="btn"> show more </a>
+                </div>
+
+                <div class="card">
+                    <img src="assets/img/clientes.png" alt="">
+                    <h3>Customer Manager</h3>
+                    <p>Sistem for register and manager clients</p>
+                    <a href="https://github.com/LilDAng31/SimulacroPueba.git" class="btn"> show more </a>
+                </div>
+
+                <div class="card">
+                    <img src="assets/img/clima.png" alt="">
+                    <h3> wearther app </h3>
+                    <p>
+                        software that recommends clothing according to the weather
+                    </p>
+                    <a href="https://github.com/LilDAng31/Clan-6.git" class="btn"> show more </a>
+                </div>
+
+                <div class="card">
+                    <img src="assets/img/pets.png" alt="">
+                    <h3>pets</h3>
+                    <p> a website you can watch the pets</p>
+                    <a href="pets.html" class="btn"> show more</a>
+                </div>
+
+            </div>
+        </section>
+        <footer id="contact" class="contact">
+                <div class="footer-container">
+                    <div class="text">
+
+                        <span class="simbolo"> &lt;/&gt;</span>
+                        <span class="white"> Angel </span>
+                        <span class="green">Dev</span>
+                        
+                    </div>
+
+                    <p>Aprendiz de desarrollo de software 🚀</p>
+
+                    <div class="social">
+                        <a href="#">GitHub</a>
+                        <a href="#">LinkedIn</a>
+                        <a href="#">Correo</a>
+                    </div>
+
+                    <p class="copy">
+                        © 2026 Angel Dev - Todos los derechos reservados
+                    </p>
+
+            </footer>
     </main>
-
+    <script src="assets/script/script.js"></script>
 </body>
 
 </html>

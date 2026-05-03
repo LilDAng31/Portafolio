@@ -1,3 +1,6 @@
+@import url(abaut-me.css);
+@import url(proyects.css);
+@import url(footer.css);
 * {
     padding: 0;
     margin: 0;
@@ -56,11 +59,14 @@ html {
     text-decoration: none;
 }
 
+
 .nav ul {
     list-style: none;
 }
 
-
+.menu-toggle{
+    display: none;
+}
 .Logo {
     color: var(--green2);
 
@@ -95,7 +101,7 @@ html {
 
 }
 .hero-text{
-    width: 30vw;
+    width: 100%;
 }
 .hero-text h2{
     font-size: 3rem;
@@ -129,8 +135,64 @@ html {
 .hero-img{
     width: 70%;
     height: 100%;
-    background-image: url(/Portaolio/assets/img/hero.jpeg);
+    background-image: url(/assets/img/hero.jpeg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+
+@media (max-width: 768px) {
+.menu-toggle{
+    display: block;
+    font-size: 2rem;
+    cursor: pointer;
+    color: var(--green2);
+
+}
+
+.menu-navegation{
+    display: none;
+}
+
+.menu-navegation.active{
+    display: flex;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    background: var(--bg-scond);
+    flex-direction: column;
+    align-items: center;
+    display: none;
+    border-bottom: 5px solid var(--green2);
+}
+
+.menu-navegation li{
+    margin: 15px 0;
+}
+
+
+    .hero-overlay {
+    flex-direction: row;
+    text-align: center;
+}
+.hero{
+    padding: 10px;
+}
+
+.hero-text{
+    width: 200px;
+}
+.hero-text h2{
+    font-size: 2.5rem;
+}
+
+.hero-img img {
+    margin-top: 20px;
+    width: 280px;
+}
+
+
+
 }
